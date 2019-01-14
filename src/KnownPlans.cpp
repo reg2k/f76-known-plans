@@ -55,7 +55,7 @@ namespace KnownPlans {
     void GetItemName(void** ppForm, void* bsStr_out, const char* name) {
         const char* result = name;
         void* form = *ppForm;
-        char str[1024] = "[\u00B6] ";
+        char str[1024] = u8"[\u00B6] ";
 
         // Check form type
         char formType = GetOffset<char>(form, 0x22);
